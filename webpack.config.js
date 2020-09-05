@@ -4,7 +4,7 @@ const WebpackMd5Hash = require('webpack-md5-hash');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const webpack = require('webpack');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const isDev = process.env.NODE_ENV === 'development';
+// const isDev = process.env.NODE_ENV === 'development';
 module.exports = {
   entry: path.resolve(__dirname, './src/index.js'),
   output: {
@@ -20,18 +20,22 @@ module.exports = {
           loader: "babel-loader"
         }
       },
+      // {
+      //   test: /\.css$/i,
+      //   use: [
+      //     (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
+      //     {
+      //       loader:'css-loader',
+      //       options: {
+      //           importLoaders: 2
+      //       } 
+      //     }, 
+      //     'postcss-loader'
+      //         ]
+      // },
       {
-        test: /\.css$/i,
-        use: [
-          (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
-          {
-            loader:'css-loader',
-            options: {
-                importLoaders: 2
-            } 
-          }, 
-          'postcss-loader'
-              ]
+          test: /\.css$/,
+          use:  [MiniCssExtractPlugin.loader, {loader:'css-loader', options: { importLoaders: 2}}, 'postcss-loader']
       },
       {
         test: /\.(png|jpg|gif|ico|svg)$/,
@@ -66,8 +70,8 @@ module.exports = {
       filename: 'index.html'
     }),
     new WebpackMd5Hash(),
-    new webpack.DefinePlugin({
-      'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
-    })
+    // new webpack.DefinePlugin({
+    //   'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+    // })
   ]
 };
