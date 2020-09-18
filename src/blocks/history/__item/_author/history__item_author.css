@@ -1,0 +1,19 @@
+.history__item_author {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 2px;
+}
+
+@media all and (max-width : 800px) {
+    .history__item_author {
+        font-size: 20px;
+    }
+}
+@media all and (max-width : 400px) {
+    .history__item_author {
+        font-size: 18px;
+    }
+}

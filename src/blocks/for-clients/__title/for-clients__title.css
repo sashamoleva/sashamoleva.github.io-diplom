@@ -1,0 +1,17 @@
+.for-clients__title {
+    margin-top: 0px;
+    margin-bottom: 24px;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 46px;
+    }
+
+    @media all and (max-width : 800px) {
+        .for-clients__title {
+            font-size: 30px;
+            line-height: 34px;
+            margin-bottom: 16px;
+        }
+    }

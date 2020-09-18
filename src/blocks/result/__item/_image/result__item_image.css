@@ -1,0 +1,10 @@
+.result__item_image {
+    margin-bottom: 20px;
+}
+
+@media all and (max-width : 800px) {
+    .result__item_image {
+        height: 150px;
+        margin-bottom: 15px;
+    }
+}

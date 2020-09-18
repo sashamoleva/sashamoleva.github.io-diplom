@@ -1,0 +1,22 @@
+.result__item_author {
+    /* margin-top: auto; */
+    margin-bottom: 24px;
+    margin-left: 24px;
+    
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #B6BCBF;
+}
+
+@media all and (max-width : 800px) {
+    .result__item_author {
+        margin-bottom: 16px;
+        margin-left: 16px;
+    }
+}

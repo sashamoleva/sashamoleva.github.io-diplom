@@ -1,0 +1,22 @@
+@import url(./_title/about-author__textcontainer_title.css);
+@import url(./_subtitle/about-author__textcontainer_subtitle.css);
+
+.about-author__textcontainer {
+    max-width: 600px;
+    /* font-family: Roboto; */
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 131px;
+}
+
+@media all and (max-width : 800px) {
+    .about-author__textcontainer {
+        margin-top: 40px;
+        margin-right: 40px;
+    }
+}
+@media all and (max-width : 462px) {
+    .about-author__textcontainer {
+        margin: 0px 26px 30px;
+    }
+}

@@ -1,0 +1,22 @@
+@import url(./__text/for-clients__text.css);
+@import url(./__title/for-clients__title.css);
+
+.for-clients {
+    margin-left: 104px;
+    text-align: left;
+    margin-bottom: 94px;
+} 
+
+@media all and (max-width : 800px) {
+    .for-clients {
+        margin-left: 40px;
+        margin-bottom: 26px;
+        margin-right: 40px;
+    }
+}
+@media all and (max-width : 400px) {
+    .for-clients {
+        margin-left: 18px;
+        margin-right: 16px;
+    }
+}

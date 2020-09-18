@@ -1,0 +1,22 @@
+@import url(./__title/tabel__title.css);
+@import url(./__comments/tabel__comments.css);
+@import url(./__comment/tabel__comment.css);
+@import url(./__item/tabel__item.css);
+
+.tabel {
+    background: #F5F6F7;
+    max-height: 698px;
+    padding: 80px 104px;
+    max-width: 1440px;
+}
+
+@media all and (max-width : 800px) {
+    .tabel {
+        padding: 40px;
+    }
+}
+@media all and (max-width : 400px) {
+    .tabel {
+        padding: 24px 16px;
+    }
+}

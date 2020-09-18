@@ -1,0 +1,30 @@
+@import url(./-button/main__field-button.css);
+@import url(./-input/main__field-input.css);
+
+.main__field {
+    width: 100%;
+    /* border: 1px solid red; */
+    height: 64px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    backdrop-filter: blur(8px);
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    /* margin-bottom: 80px; */
+    font-family: Roboto;
+}
+@media all and (max-width : 800px) {
+    .main__field {
+        height: 56px;
+    }
+}
+@media all and (max-width : 462px) {
+    .main__field {
+        flex-direction: column;
+        padding-left: 0px;
+        margin-bottom: 60px;
+
+    }
+}

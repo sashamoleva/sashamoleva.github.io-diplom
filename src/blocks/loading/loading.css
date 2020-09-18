@@ -1,0 +1,16 @@
+@import url(./__info/loading__info.css);
+@import url(./__circle-preloader/loading__circle-preloader.css);
+
+
+.loading {
+    display: flex;
+    background: #F5F6F7;
+    max-width: 1440px;
+    height: 282px;
+    /* display: none; */
+    margin: 0;
+    overflow: hidden; 
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}

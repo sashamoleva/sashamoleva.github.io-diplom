@@ -1,0 +1,24 @@
+@import url(./__container/history__container.css);
+@import url(./__header/history__header.css);
+@import url(./__item/history__item.css);
+@import url(./__look-data/history__look-data.css);
+@import url(./__point/history__point.css);
+@import url(./__points/history__points.css);
+@import url(./__text-container/history__text-container.css);
+@import url(./__title/history__title.css);
+@import url(./_point_color/history_point_color.css);
+@import url(./__slider/history__slider.css);
+@import url(./__button/history__button.css);
+
+.history {
+    min-height: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    flex-flow: wrap;
+    display: flex;
+}
+@media all and (max-width : 400px) {
+    .history{
+       padding-bottom: 32px;
+    }
+}

@@ -1,0 +1,14 @@
+@import url(./_img/history__slider_img.css);
+@import url(./_left/history__slider_left.css);
+@import url(./_right/history__slider_right.css);
+
+
+.history__slider {
+
+}
+
+@media all and (max-width : 800px) {
+    .history__slider {
+        display: none;
+    }
+}

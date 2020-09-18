@@ -1,0 +1,9 @@
+.header__menu-container {
+    /* min-width: 300px; */
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    position: relative;
+    vertical-align: middle;
+    
+}

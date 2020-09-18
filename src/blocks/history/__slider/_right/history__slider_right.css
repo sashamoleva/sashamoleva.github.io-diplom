@@ -1,0 +1,9 @@
+.history__slider_right {
+    position: absolute;
+    z-index: 4;
+    width: 85px;
+    height: 100%;
+    right: 0px; 
+    /* margin-left: 0px; */
+    background: linear-gradient(90deg, rgba(245, 246, 247, 0) 0%, #F5F6F7 100%);
+}

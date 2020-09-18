@@ -1,0 +1,24 @@
+.result__button {
+    cursor: pointer;
+    background: #FFFFFF;
+    border-radius: 80px;
+    width: 288px;
+    height: 64px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0px;
+    margin: auto;
+    display: block;
+}
+.result__button:hover {
+    opacity: 0.9;
+}
+
+@media all and (max-width : 800px) {
+    .result__button {
+        width: 240px;
+    }
+}

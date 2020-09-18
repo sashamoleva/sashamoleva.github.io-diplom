@@ -1,0 +1,18 @@
+.tabel__comment {
+    margin-right: 50px;
+    width: 54px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #B6BCBF;
+
+}
+
+.tabel__comment:last-child {
+    margin-right: 0px;
+    width: auto;
+}

@@ -1,0 +1,24 @@
+@import url(./_author/result__item_author.css);
+@import url(./_date/result__item_date.css);
+@import url(./_image/result__item_image.css);
+@import url(./_text/result__item_text.css);
+@import url(./_title/result__item_title.css);
+
+.result__item {
+    max-width: 400px;
+    height: 576px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* padding-bottom: 24px; */
+    overflow: hidden;
+}
+@media all and (max-width : 800px) {
+    .result__item {
+        height: 420px;
+    }
+}
+
+
