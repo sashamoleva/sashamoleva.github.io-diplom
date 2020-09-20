@@ -39,8 +39,9 @@ module.exports = {
       // },
       {
           test: /\.css$/,
-          use:  [MiniCssExtractPlugin.loader, {loader:'css-loader', options: { importLoaders: 2}}, 'postcss-loader']
-      },
+          use:  [{loader: MiniCssExtractPlugin.loader, options: {publicPath: '../'}},
+          {loader:'css-loader', options: {importLoaders: 2}}, 'postcss-loader']
+        },
       {
         test: /\.(png|jpg|gif|ico|svg)$/,
         use: [
@@ -59,7 +60,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'style.[contenthash].css'
+      filename: './css/[name].[contenthash].css'
     }),
     new OptimizeCssAssetsPlugin({
         assetNameRegExp: /\.css$/g,
