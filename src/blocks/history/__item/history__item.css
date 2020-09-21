@@ -1,0 +1,37 @@
+@import url(./_author/history__item_author.css);
+@import url(./_date/history__item_date.css);
+@import url(./_image/history__item_image.css);
+@import url(./_mail/history__item_mail.css);
+@import url(./_text/history__item_text.css);
+
+
+
+.history__item {
+    cursor: pointer;
+    width: 352px;
+    height: 240px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    margin-right: 16px;
+    padding: 24px;
+    flex-shrink: 0;
+    z-index: 1;
+    position: relative;
+    /* transition: opacity 1s ease-in; */
+    /* opacity: 0; */
+    /* box-shadow: inset 88px 0px 44px -40px rgba(9,26,43,1); */
+    }
+
+    @media all and (max-width : 800px) {
+        .history__item {
+            width: 288px;
+            height: 192px;
+            margin-right: 8px;
+        }
+    }
+    @media all and (max-width : 400px) {
+        .history__item {
+            width: 240px;
+            height: 216px;
+        }
+    }

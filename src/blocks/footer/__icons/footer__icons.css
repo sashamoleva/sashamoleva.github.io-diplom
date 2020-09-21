@@ -1,0 +1,15 @@
+.footer__icons {
+    list-style-type: none; 
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    width: 65px;
+}
+
+@media all and (max-width : 644px) {
+    .footer__icons {
+        order: 2;
+    }
+}

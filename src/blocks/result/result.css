@@ -1,0 +1,26 @@
+@import url(./__container/result__container.css);
+@import url(./__header/result__header.css);
+@import url(./__item/result__item.css);
+@import url(./__look-data/result__look-data.css);
+@import url(./__title/result__title.css);
+@import url(./__button/result__button.css);
+@import url(./__text-container/result__text-container.css);
+
+.result {
+    background: #F5F6F7;
+    /* max-height: 774px; */
+    padding: 80px 104px;
+}
+
+@media all and (max-width : 800px) {
+    .result {
+        padding: 40px;
+    }
+}
+@media all and (max-width : 462px) {
+    .result {
+        margin: auto;
+        padding: 0px;
+        padding-bottom: 44px;
+    }
+}

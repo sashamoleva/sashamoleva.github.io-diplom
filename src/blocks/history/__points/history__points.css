@@ -1,0 +1,22 @@
+.history__points {
+    display: flex;
+    list-style: none;
+    width: 40px;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px;
+}
+
+@media all and (max-width : 800px) {
+    .history__points {
+       margin-bottom: 0px;
+       margin-top: 32px;
+    }
+}
+@media all and (max-width : 400px) {
+    .history__points {
+       margin-bottom: 24px;
+    }
+}
+

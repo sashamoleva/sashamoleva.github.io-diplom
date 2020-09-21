@@ -1,0 +1,60 @@
+.main__title {
+    display: flex;
+    max-width: 88%;
+    margin-top: 0px;
+    margin-bottom: 32px;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 64px;
+    text-align: left;
+    justify-content: left;
+    color: #FFFFFF;
+}
+
+ @media all and (max-width : 800px) {
+    .main__title {
+        font-size: 36px;
+        line-height: 40px;
+        margin-bottom: 16px;
+    }
+}
+/*
+
+@media all and (min-width : 424px) and (max-width : 539px) {
+    .main__title {
+        font-size: 50px;
+        line-height: 1.1;
+        margin-bottom: 8px;
+    }
+}
+
+@media all and (min-width : 540px) and (max-width : 599px) {
+    .main__title {
+        font-size: 65px;
+        line-height: 1.2;
+    }
+}
+@media all and (min-width : 599px) and (max-width : 686px) {
+    .main__title {
+        font-size: 75px;
+        line-height: 1.2;
+    }
+}
+@media all and (min-width : 687px) and (max-width : 768px) {
+    .main__title {
+        font-size: 85px;
+        line-height: 1.2;
+    }
+}
+@media all and (min-width : 935px) {
+    .main__title {
+        width: 82%;
+    }
+}
+@media all and (max-width : 539px) {
+    .main__title {
+        margin-bottom: 8px;
+    }
+} */

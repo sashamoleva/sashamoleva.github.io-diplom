@@ -1,0 +1,18 @@
+.header-border__gray {
+    background: #FFFFFF;
+    box-shadow: inset 0px -1px 0px #D1D2D6;
+    height: 1px;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+@media all and (max-width : 800px) {
+    .header-border__gray {
+        margin-bottom: 30px;
+    }
+}
+@media all and (max-width : 450px) {
+    .header-border__gray {
+        margin-bottom: 16px;
+    }
+}

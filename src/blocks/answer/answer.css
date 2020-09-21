@@ -1,0 +1,24 @@
+@import url(./__news-text/answer__news-text.css);
+@import url(./__news-titles/answer__news-titles.css);
+@import url(./__subtitle/answer__subtitle.css);
+@import url(./__title/answer__title.css);
+
+
+.answer {
+    max-width: 1440px;
+    height: 282px;
+    padding-left: 104px;
+    
+}
+@media all and (max-width : 800px) {
+    .answer {
+        padding-left: 40px;
+        height: auto;
+    }
+}
+@media all and (max-width : 400px) {
+    .answer {
+        margin-bottom: 16px;
+        padding-left: 16px;
+    }
+}

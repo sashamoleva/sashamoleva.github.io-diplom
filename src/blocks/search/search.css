@@ -1,0 +1,22 @@
+
+.search {
+
+    background: url(../../images/georgia-de-lotz--UsJoNxLaNo-unsplash.jpg);
+    max-width: 1440px;
+    max-height: 576px;
+    margin: 0px;
+    width: 100%;
+    height: auto;
+    padding-bottom: 80px;
+    background-size:cover;
+    text-align: center;
+    align-items: center;
+    /* overflow: hidden; */
+    /* object-fit: contain; */
+}
+
+@media all and (max-width : 800px) {
+    .search {
+        padding-bottom: 48px;
+    }
+}

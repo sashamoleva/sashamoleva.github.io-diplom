@@ -1,0 +1,12 @@
+.result__look-data {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-decoration: none;
+    color: black;
+}

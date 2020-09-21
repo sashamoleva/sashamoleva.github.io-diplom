@@ -1,0 +1,14 @@
+.result__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+
+@media all and (max-width : 462px) {
+    .result__header {
+        flex-direction: column;
+        margin-bottom: 36px;
+        margin-left: 16px;
+        padding-top: 32px;
+    }
+}

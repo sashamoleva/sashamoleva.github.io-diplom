@@ -1,0 +1,13 @@
+.history__title {
+    
+}
+@media all and (max-width : 800px) {
+    .history__title {
+        width: 336px;
+    }
+}
+@media all and (max-width : 400px) {
+    .history__title {
+        width: 200px;
+    }
+}

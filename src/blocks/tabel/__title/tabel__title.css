@@ -1,0 +1,16 @@
+.tabel__title {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px; 
+    margin-bottom: 48px;
+}
+
+@media all and (max-width : 400px) {
+    .tabel__title {
+        font-size: 22px;
+        line-height: 30px; 
+        margin-bottom: 16px; 
+    }
+}

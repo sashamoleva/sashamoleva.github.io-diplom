@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Sasha Moleva">
+  <meta name="description" content="Поисковик новостей с анализом актуальности на последнюю неделю">
+  <title>NewsAnalyzer</title>
+</head> 
+<body id="body">
+    <div class="page">
+        <section class="search">
+            <header class="header">
+                <p class="header__name">NewsAnalyzer</p>
+                <div class="header__menu-container">
+                    <a class="header__menu header_menu_active" href="#">Главная</a>
+                    <a class="header__menu" href="./about.html">О проекте</a>
+                </div>
+            </header>
+            <div class="header-border"></div>
+            <section class="main">
+                <h1 class="main__title">Что в мире творится?</h1>
+                <p class="main__subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
+                <form class="main__field" novalidate>
+                    <input class="main__field-input" type="text" required placeholder="Введите тему новости">
+                    <button class="main__field-button" type="submit">Искать</button>
+                </form>
+            </section>
+        </section> 
+        <div class="loading">
+            <i class="loading__circle-preloader"></i>
+            <p class="loading__info">Идет поиск новостей...</p>
+        </div>
+        <div class="zero-result">
+            <img class="zero-result__img" src="<%=require('./images/not-found_v1.svg').default%>" alt="иконка">
+            <h3 class="zero-result__maininfo">Ничего не найдено</h3>
+            <p class="zero-result__info">К сожалению по вашему запросу ничего не найдено.</p>
+        </div>
+        <section class="result">
+            <div class="result__header">
+                <h2 class="result__title">Результаты поиска</h2>
+                <a class="result__look-data" href="./analytics.html">Посмотреть аналитику ></a>
+            </div>
+            <div class="result__container">
+                <div class="result__item">
+                    <img class="result__item_image" src="<%=require('./images/image_08.jpg').default%>" alt="фото темы">
+                    <div class="result__text-container">
+                        <p class="result__item_date">2 августа, 2019</p>
+                        <h4 class="result__item_title">Национальное достояние – парки</h4>
+                        <p class="result__item_text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                        
+                    </div>
+                    <p class="result__item_author">Лента.ру</p>
+                </div>
+                <div class="result__item">
+                    <img class="result__item_image" src="<%=require('./images/image_08.jpg').default%>" alt="фото темы">
+                    <div class="result__text-container">
+                        <p class="result__item_date">2 августа, 2019</p>
+                        <h4 class="result__item_title">Национальное достояние – парки</h4>
+                        <p class="result__item_text">Фотограф отвлеклась от освещения суровой политической реальности Мексики</p>
+                        
+                    </div>
+                    <p class="result__item_author">Лента.ру</p>
+                </div>
+                <div class="result__item">
+                    <img class="result__item_image" src="<%=require('./images/image_08.jpg').default%>" alt="фото темы">
+                    <div class="result__text-container">
+                        <p class="result__item_date">2 августа, 2019</p>
+                        <h4 class="result__item_title">Национальное достояние – парки</h4>
+                        <p class="result__item_text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                        
+                    </div>
+                    <p class="result__item_author">Лента.ру</p>
+                </div>
+            </div>
+            <button class="result__button">Показать ещё</button>
+        </section>
+
+         <div class="about-author">
+            <img src="<%=require('./images/image-03.jpg').default%>" class="about-author__image" alt="фото автора">
+            <div class="about-author__textcontainer">
+                <h2 class="about-author__textcontainer_title">Об авторе</h2>
+                <p class="about-author__textcontainer_subtitle">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.
+                    Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+            </div>
+        </div>         
+        <footer class="footer">
+            <p class="footer__copyright">&#169; 2020 Supersite</p>
+            <nav>
+                <ul class="footer__links">
+                    <li><a class="footer__link" href="./index.html">Главная</a></li>
+                    <li><a class="footer__link" href="./about.html">О проекте</a></li>
+                    <li><a class="footer__link" href="https://praktikum.yandex.ru/" target="_blank">Яндекс Практикум</a></li>
+                </ul>
+            </nav>
+            <ul class="footer__icons">
+                <li><a class="footer__icon" target="_blank" href=""><img src="<%=require('./images/Vector.jpg').default%>" class="footer__icon" alt="иконка"></a></li>
+                <li><a target="_blank" href=""><img src="<%=require('./images/Vector2.jpg').default%>" class="footer__icon" alt="иконка"></a></li>
+            </ul>
+        </footer> 
+    </div>
+</body>
+</html>

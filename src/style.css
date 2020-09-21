@@ -1,0 +1,36 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts.css);
+@import url(./blocks/header/header.css);
+@import url(./blocks/page/page.css);
+@import url(./blocks/search/search.css);
+@import url(./blocks/main/main.css);
+@import url(./blocks/header-border/header-border.css);
+@import url(./blocks/loading/loading.css);
+@import url(./blocks/about-author/about-author.css);
+@import url(./blocks/footer/footer.css);
+@import url(./blocks/zero-result/zero-result.css);
+@import url(./blocks/result/result.css);
+@import url(./blocks/blackout/blackout.css);
+@import url(./blocks/for-clients/for-clients.css);
+@import url(./blocks/tech/tech.css);
+@import url(./blocks/history/history.css);
+@import url(./blocks/answer/answer.css);
+@import url(./blocks/tabel/tabel.css);
+@import url(./blocks/digital/digital.css);
+
+#body {
+    margin: 0px;
+    max-width: 1440px;
+    margin: auto;
+}
+
+input, button {
+outline: none;
+border: none;
+}
+
+h1, h2, h3, h4, h5, p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+

@@ -1,0 +1,19 @@
+.about-author__textcontainer_subtitle {
+    font-size: 18px;
+    line-height: 28px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+}
+
+@media all and (max-width : 800px) {
+    .about-author__textcontainer_subtitle{
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+@media all and (max-width : 462px) {
+    .about-author__textcontainer_subtitle {
+
+    }
+}

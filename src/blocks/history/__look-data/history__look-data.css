@@ -1,0 +1,15 @@
+.history__look-data {
+    
+}
+
+@media all and (max-width : 800px) {
+    .history__look-data {
+        margin-top: 0px;
+        line-height: 27px;
+    }
+}
+@media all and (max-width : 400px) {
+    .history__look-data {
+        display: none;
+    }
+}

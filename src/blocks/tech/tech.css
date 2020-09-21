@@ -1,0 +1,21 @@
+@import url(./__image/tech__image.css);
+@import url(./__images/tech__images.css);
+@import url(./__title/tech__title.css);
+
+.tech {
+    background: #F5F6F7;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 104px;
+    padding-right: 216px;
+    /* min-height: 254px; */
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+@media all and (max-width : 800px) {
+    .tech {
+       flex-direction: column;
+       padding: 40px 60px 50px 40px;
+    }
+}
