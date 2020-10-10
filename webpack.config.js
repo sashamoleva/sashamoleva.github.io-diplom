@@ -13,7 +13,8 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[chunkhash].js'
+    filename: '[name].[chunkhash].js',
+    libraryExport: 'default'
   },
   module: {
     rules: [
@@ -71,16 +72,22 @@ module.exports = {
         canPrint: true
     }),
     new HtmlWebpackPlugin({
+      inject: false,
       template: './src/index.html',
-      filename: 'index.html'
+      filename: 'index.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
+      inject: false,
       template: './src/about.html',
-      filename: 'about.html'
+      filename: 'about.html',
+      chunks: ['about']
     }),
     new HtmlWebpackPlugin({
+      inject: false,
       template: './src/analytics.html',
-      filename: 'analytics.html'
+      filename: 'analytics.html',
+      chunks: ['analytics']
     }),
     new WebpackMd5Hash(),
     // new webpack.DefinePlugin({

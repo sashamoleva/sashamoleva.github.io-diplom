@@ -5,27 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>NewsAnalyzer</title>
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css%>">
 </head> 
 <body id="body">
     <div class="page">
             <header class="header blackout">
                 <p class="header__name blackout">NewsAnalyzer</p>
                 <div class="header__menu-container">
-                    <a class="header__menu header_menu_active_black" href="./index.html">Главная</a>
+                    <a class="header__menu" href="./index.html">Главная</a>
                     <a class="header__menu" href="./about.html">О проекте</a>
                 </div>
             </header>
             <div class="header-border__gray header-border_analytics_size"></div>
             <section class="answer">
                 <h5 class="answer__subtitle"><b>Главная</b>/ Аналитика</h5>
-                <h2 class="answer__title">Вы спросили: «Путешествия»</h2>
-                <p class="answer__news-text">Новостей за неделю: <b>34 324</b></p>
-                <p class="answer__news-titles">Упоминаний в заголовках: <b>235</b></p>
+                <h2 class="answer__title"></h2>
+                <p class="answer__news-text"></p>
+                <p class="answer__news-titles"></p>
             </section>
             <section class="tabel">
                 <h3 class="tabel__title">Аналитика по дням</h3>
                 <div class="tabel__comments">
-                    <p class="tabel__comment">Дата (Август)</p>
+                    <p class="tabel__comment">Дата</p>
                     <p class="tabel__comment">Кол-во упоминаний</p>
                 </div>
                 <div class="header-border__black header-border_analytics_size-tabel"></div>
@@ -36,9 +37,9 @@
                     <p class="digital__item">75</p>
                     <p class="digital__item">100</p>
                 </div>
-                <div>
-                    <div class="tabel__item">
-                        <p class="tabel__item_date">19, пн</p>
+                <div class="tabel__container">
+                    <!-- <div class="tabel__item">
+                        <p class="tabel__item_date"></p>
                         <div class="tabel__item_strip">
                             <div class="tabel__item_size">
                                 <p class="tabel__item_size-text">15</p>
@@ -46,7 +47,7 @@
                         </div>
                     </div>
                     <div class="tabel__item">
-                        <p class="tabel__item_date">19, пн</p>
+                        <p class="tabel__item_date"></p>
                         <div class="tabel__item_strip">
                             <div class="tabel__item_size">
                                 <p class="tabel__item_size-text">15</p>
@@ -54,7 +55,7 @@
                         </div>
                     </div>
                     <div class="tabel__item">
-                        <p class="tabel__item_date">19, пн</p>
+                        <p class="tabel__item_date"></p>
                         <div class="tabel__item_strip">
                             <div class="tabel__item_size">
                                 <p class="tabel__item_size-text">15</p>
@@ -62,7 +63,7 @@
                         </div>
                     </div>
                     <div class="tabel__item">
-                        <p class="tabel__item_date">19, пн</p>
+                        <p class="tabel__item_date"></p>
                         <div class="tabel__item_strip">
                             <div class="tabel__item_size">
                                 <p class="tabel__item_size-text">15</p>
@@ -70,7 +71,7 @@
                         </div>
                     </div>
                     <div class="tabel__item">
-                        <p class="tabel__item_date">19, пн</p>
+                        <p class="tabel__item_date"></p>
                         <div class="tabel__item_strip">
                             <div class="tabel__item_size">
                                 <p class="tabel__item_size-text">15</p>
@@ -78,7 +79,7 @@
                         </div>
                     </div>
                     <div class="tabel__item">
-                        <p class="tabel__item_date">19, пн</p>
+                        <p class="tabel__item_date"></p>
                         <div class="tabel__item_strip">
                             <div class="tabel__item_size">
                                 <p class="tabel__item_size-text">15</p>
@@ -86,13 +87,13 @@
                         </div>
                     </div>
                     <div class="tabel__item">
-                        <p class="tabel__item_date">19, пн</p>
+                        <p class="tabel__item_date"></p>
                         <div class="tabel__item_strip">
                             <div class="tabel__item_size">
                                 <p class="tabel__item_size-text">15</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
             </div>
 
                 <div class="digital">
@@ -120,5 +121,6 @@
             </ul>
         </footer> 
     </div>
+    <script src="<%=htmlWebpackPlugin.files.js%>"></script>
 </body>
 </html>

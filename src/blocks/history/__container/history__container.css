@@ -4,28 +4,10 @@
     justify-content: space-between;
     overflow: hidden;
     z-index: 5;
-    /* background: linear-gradient(180deg, rgba(245, 246, 247, 0) 0%, #F5F6F7 100%); */
-    /* transform: rotate(-90deg); */
-    /* box-shadow: inset 0 0 10px 5px rgba(0,0,0,0.5) ; */
+    width: auto;
+    
 }
 
-.history__container::before {
-    content: '';
-    position: absolute;
-    height: 100px;
-    left: -200px;
-    z-index: 3;
-    width: 200px;
-}
-
-.history__container::after {
-    content: '';
-    position: absolute;width: 200px;
-    height: 100px;
-    right: -200px;
-    z-index: 3;
-    width: 200px;
-}
 
 @media all and (max-width : 800px) {
     .history__container {

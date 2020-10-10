@@ -1,5 +1,7 @@
 .result__item_image {
     margin-bottom: 20px;
+    height: 272px;
+    object-fit: contain;
 }
 
 @media all and (max-width : 800px) {

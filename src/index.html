@@ -7,6 +7,7 @@
   <meta name="author" content="Sasha Moleva">
   <meta name="description" content="Поисковик новостей с анализом актуальности на последнюю неделю">
   <title>NewsAnalyzer</title>
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css%>">
 </head> 
 <body id="body">
     <div class="page">
@@ -22,34 +23,35 @@
             <section class="main">
                 <h1 class="main__title">Что в мире творится?</h1>
                 <p class="main__subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
-                <form class="main__field" novalidate>
-                    <input class="main__field-input" type="text" required placeholder="Введите тему новости">
-                    <button class="main__field-button" type="submit">Искать</button>
+                <form class="main__field" name="searchInput" novalidate>
+                    <input novalidate class="main__field-input" id="fieldInput" name="fieldInput" type="text" pattern="[a-zа-яёA-ZА-ЯЁ]+" minlength="2" maxlength="30" placeholder="Введите тему новости" required>
+                    <button class="main__field-button" type="submit" disabled>Искать</button>
+                    <!-- <span id="fieldInput-error" name="aboutError" class="error"></span> -->
                 </form>
+                <span id="fieldInput-error" name="aboutError" class="error"></span>
             </section>
         </section> 
-        <div class="loading">
+        <div class="loading hidden">
             <i class="loading__circle-preloader"></i>
             <p class="loading__info">Идет поиск новостей...</p>
         </div>
-        <div class="zero-result">
+        <div class="zero-result hidden">
             <img class="zero-result__img" src="<%=require('./images/not-found_v1.svg').default%>" alt="иконка">
             <h3 class="zero-result__maininfo">Ничего не найдено</h3>
             <p class="zero-result__info">К сожалению по вашему запросу ничего не найдено.</p>
         </div>
-        <section class="result">
+        <section class="result hidden">
             <div class="result__header">
                 <h2 class="result__title">Результаты поиска</h2>
                 <a class="result__look-data" href="./analytics.html">Посмотреть аналитику ></a>
             </div>
             <div class="result__container">
-                <div class="result__item">
+                <!-- <div class="result__item">
                     <img class="result__item_image" src="<%=require('./images/image_08.jpg').default%>" alt="фото темы">
                     <div class="result__text-container">
                         <p class="result__item_date">2 августа, 2019</p>
                         <h4 class="result__item_title">Национальное достояние – парки</h4>
                         <p class="result__item_text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-                        
                     </div>
                     <p class="result__item_author">Лента.ру</p>
                 </div>
@@ -72,7 +74,7 @@
                         
                     </div>
                     <p class="result__item_author">Лента.ру</p>
-                </div>
+                </div> -->
             </div>
             <button class="result__button">Показать ещё</button>
         </section>
@@ -100,5 +102,6 @@
             </ul>
         </footer> 
     </div>
+    <script src="<%=htmlWebpackPlugin.files.js%>"></script>
 </body>
 </html>

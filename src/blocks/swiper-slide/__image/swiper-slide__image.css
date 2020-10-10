@@ -1,4 +1,4 @@
-.history__item_image {
+.swiper-slide__image {
     border-radius: 50%;
     width: 64px;
     float: left;
@@ -6,7 +6,7 @@
     margin-bottom: 11px;
 }
 @media all and (max-width : 400px) {
-    .history__item_image {
+    .swiper-slide__image {
         margin-right: 12px;
     }
 }

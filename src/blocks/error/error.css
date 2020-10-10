@@ -1,0 +1,11 @@
+.error {
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+    display: block;
+    margin: 4px auto 0 30px;
+    box-sizing: border-box;
+    height: 25px;
+    text-align: left;
+    width: 100%;
+  }

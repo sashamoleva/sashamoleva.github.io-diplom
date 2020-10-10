@@ -1,6 +1,7 @@
 .history__header {
     margin-left: 104px;
     margin-right: 104px;
+    width: 100%;
 }
 
 @media all and (max-width : 800px) {

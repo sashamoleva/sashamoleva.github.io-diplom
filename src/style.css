@@ -10,13 +10,16 @@
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/zero-result/zero-result.css);
 @import url(./blocks/result/result.css);
-@import url(./blocks/blackout/blackout.css);
+@import url(./blocks/hidden/hidden.css);
 @import url(./blocks/for-clients/for-clients.css);
 @import url(./blocks/tech/tech.css);
 @import url(./blocks/history/history.css);
 @import url(./blocks/answer/answer.css);
 @import url(./blocks/tabel/tabel.css);
 @import url(./blocks/digital/digital.css);
+@import url(./blocks/error/error.css);
+@import url(./blocks/blackout/blackout.css);
+@import url(./blocks/swiper-slide/swiper-slide.css);
 
 #body {
     margin: 0px;
@@ -34,3 +37,31 @@ h1, h2, h3, h4, h5, p {
     margin-bottom: 0px;
 }
 
+form {
+  margin: auto;
+}
+
+/* .swiper-button-prev {
+    position: absolute;
+    z-index: 4;
+    width: 85px;
+    height: 60%;
+    left: 0px; 
+    margin-left: 0px;
+    background: linear-gradient(270deg, rgba(245, 246, 247, 0) 0%, #F5F6F7 100%);
+  }
+  
+.swiper-button-next {
+    position: absolute;
+    z-index: 4;
+    width: 85px;
+    height: 60%;
+    right: 0px; 
+    margin-right: 0px;
+    background: linear-gradient(270deg, rgba(245, 246, 247, 0) 0%, #F5F6F7 100%);
+  } */
+ 
+  /* .div.swiper-slide {
+    width: 352px;
+    height: 240px;
+  } */
