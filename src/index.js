@@ -74,7 +74,7 @@ function showMore(obj){
         resultButton.classList.add('hidden');
     }
     for (let i = cntShMore; i <= shMore && i <= pSize-1; i++){
-        if (nwsArr[i].urlToImage == null) {nwsArr[i].urlToImage = './src/images/image_08.jpg';} // Если нет изображения то подставить стандартную картинку
+        if (nwsArr[i].urlToImage == null) {nwsArr[i].urlToImage = './images/image_08.jpg';} // Если нет изображения то подставить стандартную картинку
         cardsList.addNewCard(dateFormat(nwsArr[i]), nwsArr[i].title, nwsArr[i].description, nwsArr[i].urlToImage, nwsArr[i].source.name,);
     }
     cntShMore = shMore + 1; // Увеличение счетчика для количества нажатия кнопки "показать еще"
